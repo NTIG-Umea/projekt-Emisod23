@@ -1,12 +1,46 @@
 let x = 0
 let y = 0
 input.onButtonPressed(Button.A, function () {
+    basic.clearScreen()
     x = Math.randomRange(1, 6)
     basic.showNumber(x)
     y += 0 + x
     basic.showNumber(y)
+    if (y == 41) {
+        basic.showIcon(IconNames.Skull)
+    }
+    if (y == 4) {
+        basic.showIcon(IconNames.Skull)
+    }
     if (y == 15) {
         basic.showIcon(IconNames.Skull)
+    }
+    if (y == 24) {
+        basic.showIcon(IconNames.Skull)
+    }
+    if (y == 35) {
+        basic.showIcon(IconNames.Skull)
+    }
+    if (y == 48) {
+        basic.showIcon(IconNames.Skull)
+    }
+    if (y == 44) {
+        basic.showLeds(`
+            . # # # #
+            . . # # #
+            . . . . #
+            # # # # #
+            # # # # #
+            `)
+    }
+    if (y == 5) {
+        basic.showLeds(`
+            . # # # #
+            . . # # #
+            . . . . #
+            # # # # #
+            # # # # #
+            `)
     }
     if (y == 11) {
         basic.showLeds(`
@@ -17,10 +51,196 @@ input.onButtonPressed(Button.A, function () {
             # # # # #
             `)
     }
+    if (y == 23) {
+        basic.showLeds(`
+            . # # # #
+            . . # # #
+            . . . . #
+            # # # # #
+            # # # # #
+            `)
+    }
+    if (y == 39) {
+        basic.showLeds(`
+            . # # # #
+            . . # # #
+            . . . . #
+            # # # # #
+            # # # # #
+            `)
+    }
+    if (50 <= y) {
+        basic.showString("You win")
+    }
 })
 input.onButtonPressed(Button.B, function () {
+    if (y == 41) {
+        x = Math.randomRange(1, 6)
+        if (x == 1) {
+            basic.showLeds(`
+                . # # # .
+                . # . # .
+                # # # # #
+                . . # # #
+                . . # # #
+                `)
+        }
+        if (x == 2) {
+            basic.showLeds(`
+                # # # # .
+                . # . # #
+                . # # # #
+                # # # # #
+                # # # . .
+                `)
+        }
+        if (x == 3) {
+            basic.showIcon(IconNames.Ghost)
+        }
+        if (x == 4) {
+            basic.showIcon(IconNames.Snake)
+        }
+        if (x == 5) {
+            basic.showIcon(IconNames.Duck)
+        }
+        if (x == 6) {
+            basic.showIcon(IconNames.Tortoise)
+        }
+    }
+    if (y == 4) {
+        x = Math.randomRange(1, 6)
+        if (x == 1) {
+            basic.showLeds(`
+                . # # # .
+                . # . # .
+                # # # # #
+                . . # # #
+                . . # # #
+                `)
+        }
+        if (x == 2) {
+            basic.showLeds(`
+                # # # # .
+                . # . # #
+                . # # # #
+                # # # # #
+                # # # . .
+                `)
+        }
+        if (x == 3) {
+            basic.showIcon(IconNames.Ghost)
+        }
+        if (x == 4) {
+            basic.showIcon(IconNames.Snake)
+        }
+        if (x == 5) {
+            basic.showIcon(IconNames.Duck)
+        }
+        if (x == 6) {
+            basic.showIcon(IconNames.Tortoise)
+        }
+    }
+    if (y == 48) {
+        x = Math.randomRange(1, 6)
+        if (x == 1) {
+            basic.showLeds(`
+                . # # # .
+                . # . # .
+                # # # # #
+                . . # # #
+                . . # # #
+                `)
+        }
+        if (x == 2) {
+            basic.showLeds(`
+                # # # # .
+                . # . # #
+                . # # # #
+                # # # # #
+                # # # . .
+                `)
+        }
+        if (x == 3) {
+            basic.showIcon(IconNames.Ghost)
+        }
+        if (x == 4) {
+            basic.showIcon(IconNames.Snake)
+        }
+        if (x == 5) {
+            basic.showIcon(IconNames.Duck)
+        }
+        if (x == 6) {
+            basic.showIcon(IconNames.Tortoise)
+        }
+    }
+    if (y == 35) {
+        x = Math.randomRange(1, 6)
+        if (x == 1) {
+            basic.showLeds(`
+                . # # # .
+                . # . # .
+                # # # # #
+                . . # # #
+                . . # # #
+                `)
+        }
+        if (x == 2) {
+            basic.showLeds(`
+                # # # # .
+                . # . # #
+                . # # # #
+                # # # # #
+                # # # . .
+                `)
+        }
+        if (x == 3) {
+            basic.showIcon(IconNames.Ghost)
+        }
+        if (x == 4) {
+            basic.showIcon(IconNames.Snake)
+        }
+        if (x == 5) {
+            basic.showIcon(IconNames.Duck)
+        }
+        if (x == 6) {
+            basic.showIcon(IconNames.Tortoise)
+        }
+    }
+    if (y == 24) {
+        x = Math.randomRange(1, 6)
+        if (x == 1) {
+            basic.showLeds(`
+                . # # # .
+                . # . # .
+                # # # # #
+                . . # # #
+                . . # # #
+                `)
+        }
+        if (x == 2) {
+            basic.showLeds(`
+                # # # # .
+                . # . # #
+                . # # # #
+                # # # # #
+                # # # . .
+                `)
+        }
+        if (x == 3) {
+            basic.showIcon(IconNames.Ghost)
+        }
+        if (x == 4) {
+            basic.showIcon(IconNames.Snake)
+        }
+        if (x == 5) {
+            basic.showIcon(IconNames.Duck)
+        }
+        if (x == 6) {
+            basic.showIcon(IconNames.Tortoise)
+        }
+    }
     if (y == 15) {
-        x = Math.randomRange(1, 5)
+        x = Math.randomRange(1, 6)
         if (x == 1) {
             basic.showLeds(`
                 . # # # .
@@ -54,8 +274,8 @@ input.onButtonPressed(Button.B, function () {
     }
 })
 input.onGesture(Gesture.Shake, function () {
-    if (y == 11) {
-        x = Math.randomRange(1, 10)
+    if (y == 39) {
+        x = Math.randomRange(1, 7)
         basic.showIcon(IconNames.Square)
         basic.showIcon(IconNames.SmallSquare)
         basic.showIcon(IconNames.Square)
@@ -67,41 +287,130 @@ input.onGesture(Gesture.Shake, function () {
         if (x == 7) {
             basic.showIcon(IconNames.TShirt)
         }
-        if (x == 8) {
+        if (x == 5) {
             basic.showIcon(IconNames.Cow)
         }
-        if (x == 9) {
+        if (x == 4) {
             basic.showIcon(IconNames.Rollerskate)
         }
-        if (x == 10) {
+        if (x == 3) {
             basic.showIcon(IconNames.Sword)
         }
+        if (x == 2) {
+            basic.showIcon(IconNames.No)
+        }
+        if (x == 1) {
+            basic.showIcon(IconNames.Snake)
+        }
+    }
+    if (y == 23) {
+        x = Math.randomRange(1, 7)
+        basic.showIcon(IconNames.Square)
+        basic.showIcon(IconNames.SmallSquare)
+        basic.showIcon(IconNames.Square)
+        basic.showIcon(IconNames.SmallSquare)
+        basic.showIcon(IconNames.Diamond)
+        if (x == 6) {
+            basic.showIcon(IconNames.Heart)
+        }
+        if (x == 7) {
+            basic.showIcon(IconNames.TShirt)
+        }
         if (x == 5) {
-            basic.showLeds(`
-                . # # # .
-                # # # # #
-                # # # # #
-                # # # # #
-                . # # # .
-                `)
+            basic.showIcon(IconNames.Cow)
         }
         if (x == 4) {
-            basic.showLeds(`
-                . # # # .
-                # # # # #
-                # # # # #
-                # # # # #
-                . # # # .
-                `)
+            basic.showIcon(IconNames.Rollerskate)
         }
         if (x == 3) {
-            basic.showLeds(`
-                . # # # .
-                # # # # #
-                # # # # #
-                # # # # #
-                . # # # .
-                `)
+            basic.showIcon(IconNames.Sword)
+        }
+        if (x == 2) {
+            basic.showIcon(IconNames.No)
+        }
+        if (x == 1) {
+            basic.showIcon(IconNames.Snake)
+        }
+    }
+    if (y == 44) {
+        x = Math.randomRange(1, 7)
+        basic.showIcon(IconNames.Square)
+        basic.showIcon(IconNames.SmallSquare)
+        basic.showIcon(IconNames.Square)
+        basic.showIcon(IconNames.SmallSquare)
+        basic.showIcon(IconNames.Diamond)
+        if (x == 6) {
+            basic.showIcon(IconNames.Heart)
+        }
+        if (x == 7) {
+            basic.showIcon(IconNames.TShirt)
+        }
+        if (x == 5) {
+            basic.showIcon(IconNames.Cow)
+        }
+        if (x == 4) {
+            basic.showIcon(IconNames.Rollerskate)
+        }
+        if (x == 3) {
+            basic.showIcon(IconNames.Sword)
+        }
+        if (x == 2) {
+            basic.showIcon(IconNames.No)
+        }
+        if (x == 1) {
+            basic.showIcon(IconNames.Snake)
+        }
+    }
+    if (y == 5) {
+        x = Math.randomRange(1, 7)
+        basic.showIcon(IconNames.Square)
+        basic.showIcon(IconNames.SmallSquare)
+        basic.showIcon(IconNames.Square)
+        basic.showIcon(IconNames.SmallSquare)
+        basic.showIcon(IconNames.Diamond)
+        if (x == 6) {
+            basic.showIcon(IconNames.Heart)
+        }
+        if (x == 7) {
+            basic.showIcon(IconNames.TShirt)
+        }
+        if (x == 5) {
+            basic.showIcon(IconNames.Cow)
+        }
+        if (x == 4) {
+            basic.showIcon(IconNames.Rollerskate)
+        }
+        if (x == 3) {
+            basic.showIcon(IconNames.Sword)
+        }
+        if (x == 2) {
+            basic.showIcon(IconNames.No)
+        }
+        if (x == 1) {
+            basic.showIcon(IconNames.Snake)
+        }
+    }
+    if (y == 11) {
+        x = Math.randomRange(1, 7)
+        basic.showIcon(IconNames.Square)
+        basic.showIcon(IconNames.SmallSquare)
+        basic.showIcon(IconNames.Square)
+        basic.showIcon(IconNames.SmallSquare)
+        basic.showIcon(IconNames.Diamond)
+        if (x == 6) {
+            basic.showIcon(IconNames.Heart)
+        }
+        if (x == 7) {
+            basic.showIcon(IconNames.TShirt)
+        }
+        if (x == 3) {
+            basic.showIcon(IconNames.Cow)
+        }
+        if (x == 4) {
+            basic.showIcon(IconNames.Rollerskate)
+        }
+        if (x == 5) {
+            basic.showIcon(IconNames.Sword)
         }
         if (x == 2) {
             basic.showIcon(IconNames.No)
